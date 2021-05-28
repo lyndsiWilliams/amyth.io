@@ -15,6 +15,7 @@ export const Page: React.FC<PageProps> = ({ user, onLogin, onLogout, onCreateAcc
     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />
 
     <section>
+      <h2>This is a change that I've made</h2>
       <h2>Pages in Storybook</h2>
       <p>
         We recommend building UIs with a{' '}
