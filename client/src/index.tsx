@@ -1,7 +1,12 @@
+// Package imports
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+// Component
 import App from './App';
+// Styling
+import './index.css';
+import 'antd/dist/antd.css';
+// Other
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
