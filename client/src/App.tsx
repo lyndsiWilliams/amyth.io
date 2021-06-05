@@ -14,10 +14,18 @@ const StyledWrapper = styled.div`
 
 const StyledCard = styled(Card)`
   width: 700px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
 
   .ant-card-meta-title {
+    font-family: 'Smythe', cursive;
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
+  }
+
+  .ant-card-meta-description {
+    text-align: center;
+    margin-bottom: 20px;
   }
 `;
 
@@ -28,41 +36,23 @@ function App() {
         cover={
           // eslint-disable-next-line jsx-a11y/img-redundant-alt
           <img
-            alt={
-              `Photo by 
-                <a 
-                  href="https://unsplash.com/@cosmictimetraveler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Cosmic Timetraveler
-                </a> 
-              on 
-                <a 
-                  href="https://unsplash.com/s/photos/fairy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Unsplash
-                </a>`
-            }
+            alt='Photo by Cosmic Timetraveler on Unsplash'
             src={mythicalBridge}
           />
         }
       >
         <Meta
           title='.: Amyth.io :.'
-          description={
-            <Button
-              block
-              href='https://60bafb54de11ec00490290c8-gxecvdusaz.chromatic.com/?path=/story/example-introduction--page'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Check out the Storybook!
-            </Button>
-          }
+          description='.: A mythical styling library :.'
         />
+        <Button
+          block
+          href='https://60bafb54de11ec00490290c8-gxecvdusaz.chromatic.com/?path=/story/example-introduction--page'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Check out the Storybook!
+        </Button>
       </StyledCard>
     </StyledWrapper>
   );
