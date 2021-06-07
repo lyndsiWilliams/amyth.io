@@ -47,7 +47,7 @@ function App() {
         />
         <Button
           block
-          href='https://60bafb54de11ec00490290c8-gxecvdusaz.chromatic.com/?path=/story/example-introduction--page'
+          href='https://60bafb54de11ec00490290c8-plhadeupxh.chromatic.com/'
           target='_blank'
           rel='noopener noreferrer'
         >
