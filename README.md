@@ -10,4 +10,4 @@
 - [`amythio.vercel.app`](https://amythio.vercel.app/)
 
 ### Storybook deployed with Chromatic at
-- [`This deployment link`](https://60bafb54de11ec00490290c8-gxecvdusaz.chromatic.com/?path=/story/example-introduction--page)
+- [`This deployment link`](https://60bafb54de11ec00490290c8-plhadeupxh.chromatic.com/)
