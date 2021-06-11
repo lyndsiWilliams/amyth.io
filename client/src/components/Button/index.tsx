@@ -8,19 +8,24 @@ export interface ButtonProps extends AntdButtonProps {
   buttonText?: string;
 }
 
-const StyledButton = styled(AntdButton)`
-  background-color: purple;
-  color: lavender;
-`;
-
 const Button = styled(
   ({ buttonText, ...props }: ButtonProps) => (
-    <StyledButton
+    <AntdButton
       {...props}
     >
       {buttonText}
-    </StyledButton>
+    </AntdButton>
   ),
-)``;
+)`
+  background-color: rebeccapurple;
+  color: lavender;
+  border: 1px solid lavender;
+
+  &:hover, &:focus {
+    background-color: lavender;
+    color: rebeccapurple;
+    border: 1px solid rebeccapurple;
+  }
+`;
 
 export default Button;
