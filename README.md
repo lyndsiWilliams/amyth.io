@@ -11,3 +11,6 @@
 
 ### Storybook deployed with Chromatic at
 - [`This deployment link`](https://60bafb54de11ec00490290c8-plhadeupxh.chromatic.com/)
+
+### Photo credit
+- Galaxy photo: [`Unsplash credit link`](https://unsplash.com/photos/4dpAqfTbvKA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
