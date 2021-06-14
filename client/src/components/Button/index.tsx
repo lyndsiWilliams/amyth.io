@@ -3,7 +3,7 @@ import { Button as AntdButton } from 'antd';
 import { ButtonProps as AntdButtonProps } from 'antd/lib/button';
 import styled from '@emotion/styled';
 import 'antd/dist/antd.css';
-// import LinesEllipsis from 'react-lines-ellipsis';
+import LinesEllipsis from 'react-lines-ellipsis';
 import galaxy from '../../images/galaxy.jpeg';
 
 export interface ButtonProps extends AntdButtonProps {
@@ -15,13 +15,13 @@ const Button = styled(
     <AntdButton
       {...props}
     >
-      {/* <LinesEllipsis
+      <LinesEllipsis
         text={buttonText}
-        maxLine='1'
+        maxLine='2'
         basedOn='letters'
         trimRight
-      /> */}
-      {buttonText}
+      />
+      {/* {buttonText} */}
     </AntdButton>
   ),
 )`
@@ -30,9 +30,11 @@ const Button = styled(
       background-position: 0 0;
     }
     to {
-      background-position: 100% 0;
+      // horizontal | vertical
+      background-position: 100% 50%;
     }
   }
+
   background-image: url(${galaxy});
   color: plum;
   border: 1px solid black;
