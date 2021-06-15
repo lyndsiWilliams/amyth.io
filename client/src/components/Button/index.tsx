@@ -15,13 +15,13 @@ const Button = styled(
     <AntdButton
       {...props}
     >
-      <LinesEllipsis
+      {/* <LinesEllipsis
         text={buttonText}
         maxLine='2'
         basedOn='letters'
         trimRight
-      />
-      {/* {buttonText} */}
+      /> */}
+      {buttonText}
     </AntdButton>
   ),
 )`

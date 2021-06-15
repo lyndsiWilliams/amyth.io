@@ -11,17 +11,25 @@ export const InteractiveButton = (args: ButtonProps) => (
     type={args.type}
     shape={args.shape}
     style={args.style}
+    loading={args.loading}
   />
 );
 
 InteractiveButton.args = {
   buttonText: 'This is a button',
   style: {
-    width: '150px',
+    width: '180px',
   }
 };
 
 InteractiveButton.argTypes = {
+  loading: {
+    defaultValue: false,
+    control: {
+      type: 'boolean',
+      options: [true, false],
+    }
+  },
   shape: {
     defaultValue: 'round',
     control: {
