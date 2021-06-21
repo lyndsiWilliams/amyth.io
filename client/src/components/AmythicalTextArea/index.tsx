@@ -5,7 +5,7 @@ import 'antd/dist/antd.css';
 
 const { TextArea } = Input;
 
-const onChange = event => {
+const onChange = (event: any) => {
   [event.target.name] = event.target.value;
 };
 

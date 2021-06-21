@@ -1,12 +1,12 @@
-import Button, { ButtonProps } from './';
+import AmythicalButton, { AmythicalButtonProps } from '.';
 
 export default {
-  title: 'Button',
-  component: Button,
+  title: 'AmythicalButton',
+  component: AmythicalButton,
 };
 
-export const InteractiveButton = (args: ButtonProps) => (
-  <Button
+export const InteractiveAmythicalButton = (args: AmythicalButtonProps) => (
+  <AmythicalButton
     buttonText={args.buttonText}
     type={args.type}
     shape={args.shape}
@@ -15,14 +15,14 @@ export const InteractiveButton = (args: ButtonProps) => (
   />
 );
 
-InteractiveButton.args = {
+InteractiveAmythicalButton.args = {
   buttonText: 'This is a button',
   style: {
     width: '180px',
   }
 };
 
-InteractiveButton.argTypes = {
+InteractiveAmythicalButton.argTypes = {
   loading: {
     defaultValue: false,
     control: {

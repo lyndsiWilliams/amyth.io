@@ -1,9 +1,9 @@
 import { mount } from '@cypress/react';
-import Button from './index';
+import AmythicalButton from './index';
 
-it('Button', () => {
+it('AmythicalButton', () => {
   mount(
-    <Button
+    <AmythicalButton
       buttonText='This is a button'
       type='default'
       shape='round'

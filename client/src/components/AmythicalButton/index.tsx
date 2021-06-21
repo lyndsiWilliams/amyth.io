@@ -1,18 +1,18 @@
 import React from 'react';
-import { Button as AntdButton } from 'antd';
-import { ButtonProps as AntdButtonProps } from 'antd/lib/button';
+import { Button } from 'antd';
+import { ButtonProps } from 'antd/lib/button';
 import styled from '@emotion/styled';
 import 'antd/dist/antd.css';
 import LinesEllipsis from 'react-lines-ellipsis';
-import galaxy from '../../images/galaxy.jpeg';
+import * as galaxy from '../../images/galaxy.jpeg';
 
-export interface ButtonProps extends AntdButtonProps {
+export interface AmythicalButtonProps extends ButtonProps {
   buttonText?: string;
 }
 
-const Button = styled(
-  ({ buttonText, ...props }: ButtonProps) => (
-    <AntdButton
+const AmythicalButton = styled(
+  ({ buttonText, ...props }: AmythicalButtonProps) => (
+    <Button
       {...props}
     >
       {/* <LinesEllipsis
@@ -22,7 +22,7 @@ const Button = styled(
         trimRight
       /> */}
       {buttonText}
-    </AntdButton>
+    </Button>
   ),
 )`
   @keyframes animatedBackground {
@@ -53,4 +53,4 @@ const Button = styled(
   }
 `;
 
-export default Button;
+export default AmythicalButton;
