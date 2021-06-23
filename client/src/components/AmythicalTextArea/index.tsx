@@ -9,7 +9,6 @@ const onChange = (event: any) => {
   [event.target.name] = event.target.value;
 };
 
-
 const AmythicalTextArea = styled(
   ({ ...props }: InputProps) => (
     <TextArea onChange={onChange} />
