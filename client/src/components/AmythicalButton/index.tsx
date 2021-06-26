@@ -4,7 +4,7 @@ import { ButtonProps } from 'antd/lib/button';
 import styled from '@emotion/styled';
 import 'antd/dist/antd.css';
 import LinesEllipsis from 'react-lines-ellipsis';
-import * as galaxy from '../../images/galaxy.jpeg';
+import galaxy from '../../images/galaxy.jpeg';
 
 export interface AmythicalButtonProps extends ButtonProps {
   buttonText?: string;
