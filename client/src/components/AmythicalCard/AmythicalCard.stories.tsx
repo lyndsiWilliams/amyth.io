@@ -15,3 +15,13 @@ export const InteractiveAmythicalCard = (args: CardProps) => {
 InteractiveAmythicalCard.args = {
   title: "Card title",
 };
+
+InteractiveAmythicalCard.argTypes = {
+  bordered: {
+    defaultValue: true,
+    control: {
+      type: 'boolean',
+      options: [true, false],
+    }
+  }
+};
