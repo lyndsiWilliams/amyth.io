@@ -2,15 +2,19 @@ import AmythicalTextArea from '.';
 import { InputProps } from 'antd/lib/input';
 
 export default {
-  title: 'Input',
+  title: 'Amythical Text Area',
   component: AmythicalTextArea,
 };
 
 export const InteractiveAmythicalTextArea = (args: InputProps) => {
   return (
-    <AmythicalTextArea type={args.type} />
+    <AmythicalTextArea style={args.style} />
   );
 };
+
+InteractiveAmythicalTextArea.args = {
+  style: { color: 'plum' }
+}
 
 InteractiveAmythicalTextArea.argTypes = {
   size: {

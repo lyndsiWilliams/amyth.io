@@ -1,7 +1,7 @@
 import AmythicalButton, { AmythicalButtonProps } from '.';
 
 export default {
-  title: 'AmythicalButton',
+  title: 'Amythical Button',
   component: AmythicalButton,
 };
 
