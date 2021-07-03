@@ -2,7 +2,7 @@ import AmythicalCard from '.';
 import { CardProps } from 'antd/lib/card';
 
 export default {
-  title: 'Card',
+  title: 'Amythical Card',
   component: AmythicalCard,
 };
 
