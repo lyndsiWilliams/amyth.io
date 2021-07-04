@@ -5,7 +5,7 @@ import 'antd/dist/antd.css';
 
 const AmythicalCard = styled(
   ({ ...props }: CardProps) => (
-    <Card />
+    <Card {...props} />
   ),
 )``;
 
