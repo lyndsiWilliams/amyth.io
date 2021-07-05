@@ -8,11 +8,15 @@ export default {
 
 export const InteractiveAmythicalTextArea = (args: InputProps) => {
   return (
-    <AmythicalTextArea style={args.style} />
+    <AmythicalTextArea
+      style={args.style}
+      placeholder={args.placeholder}
+    />
   );
 };
 
 InteractiveAmythicalTextArea.args = {
+  placeholder: 'Type something in this cool galaxy text area...',
   style: { color: 'plum' }
 }
 

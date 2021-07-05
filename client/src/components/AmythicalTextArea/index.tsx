@@ -27,6 +27,10 @@ const AmythicalTextArea = styled(
   background-position: 0px 0px;
   background-repeat: repeat-y;
   animation: animatedBackground 60s linear infinite;
+
+  &::placeholder {
+    color: lightskyblue;
+  }
 `;
 
 export default AmythicalTextArea;
