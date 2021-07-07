@@ -8,12 +8,18 @@ export default {
 
 export const InteractiveAmythicalCard = (args: CardProps) => {
   return (
-    <AmythicalCard title={args.title}>Test</AmythicalCard>
+    <AmythicalCard
+      title={args.title}
+      style={args.style}
+    >
+      Test
+    </AmythicalCard>
   );
 };
 
 InteractiveAmythicalCard.args = {
   title: "Card title",
+  style: { 'background-color': 'plum' },
 };
 
 InteractiveAmythicalCard.argTypes = {

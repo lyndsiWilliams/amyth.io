@@ -17,7 +17,7 @@ export const InteractiveAmythicalTextArea = (args: InputProps) => {
 
 InteractiveAmythicalTextArea.args = {
   placeholder: 'Type something in this cool galaxy text area...',
-  style: { color: 'plum' }
+  style: { color: 'plum' },
 }
 
 InteractiveAmythicalTextArea.argTypes = {
