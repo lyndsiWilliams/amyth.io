@@ -3,7 +3,6 @@ import { Button } from 'antd';
 import { ButtonProps } from 'antd/lib/button';
 import styled from '@emotion/styled';
 import 'antd/dist/antd.css';
-import LinesEllipsis from 'react-lines-ellipsis';
 import galaxy from '../../images/galaxy.jpeg';
 
 export interface AmythicalButtonProps extends ButtonProps {
@@ -15,12 +14,6 @@ const AmythicalButton = styled(
     <Button
       {...props}
     >
-      {/* <LinesEllipsis
-        text={buttonText}
-        maxLine='2'
-        basedOn='letters'
-        trimRight
-      /> */}
       {buttonText}
     </Button>
   ),
