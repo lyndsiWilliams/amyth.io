@@ -1,7 +1,7 @@
-import AmythicalButton, { AmythicalButtonProps } from '.';
+import AmythicalButton, { AmythicalButtonProps } from "./AmythicalButton";
 
 export default {
-  title: 'Amythical Button',
+  title: "Amythical Button",
   component: AmythicalButton,
 };
 
@@ -16,44 +16,40 @@ export const InteractiveAmythicalButton = (args: AmythicalButtonProps) => (
 );
 
 InteractiveAmythicalButton.args = {
-  buttonText: 'This is a button',
+  buttonText: "This is a button",
   style: {
-    width: '180px',
-  }
+    width: "180px",
+  },
 };
 
 InteractiveAmythicalButton.argTypes = {
   loading: {
     defaultValue: false,
     control: {
-      type: 'boolean',
+      type: "boolean",
       options: [true, false],
-    }
+    },
   },
   shape: {
-    defaultValue: 'round',
+    defaultValue: "round",
     control: {
-      type: 'select',
-      options: [
-        'round',
-        'circle',
-        undefined
-      ]
-    }
+      type: "select",
+      options: ["round", "circle", undefined],
+    },
   },
   type: {
-    defaultValue: 'default',
+    defaultValue: "default",
     control: {
-      type: 'select',
+      type: "select",
       options: [
-        'link',
-        'text',
-        'ghost',
-        'default',
-        'primary',
-        'dashed',
+        "link",
+        "text",
+        "ghost",
+        "default",
+        "primary",
+        "dashed",
         undefined,
-      ]
-    }
+      ],
+    },
   },
-}
+};

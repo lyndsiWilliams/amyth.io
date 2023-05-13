@@ -1,31 +1,28 @@
-import AmythicalTextArea from '.';
-import { InputProps } from 'antd/lib/input';
+import AmythicalTextArea from "./AmythicalTextArea";
+import { InputProps } from "antd/lib/input";
 
 export default {
-  title: 'Amythical Text Area',
+  title: "Amythical Text Area",
   component: AmythicalTextArea,
 };
 
 export const InteractiveAmythicalTextArea = (args: InputProps) => {
   return (
-    <AmythicalTextArea
-      style={args.style}
-      placeholder={args.placeholder}
-    />
+    <AmythicalTextArea style={args.style} placeholder={args.placeholder} />
   );
 };
 
 InteractiveAmythicalTextArea.args = {
-  placeholder: 'Type something in this cool galaxy text area...',
-  style: { color: 'plum' },
-}
+  placeholder: "Type something in this cool galaxy text area...",
+  style: { color: "plum" },
+};
 
 InteractiveAmythicalTextArea.argTypes = {
   size: {
-    defaultValue: 'middle',
+    defaultValue: "middle",
     control: {
-      type: 'select',
-      options: ['small', 'middle', 'large']
-    }
+      type: "select",
+      options: ["small", "middle", "large"],
+    },
   },
-}
+};
