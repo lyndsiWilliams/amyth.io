@@ -1,7 +1,7 @@
 {
   "name": "amyth.io",
   "author": "Lyndsi Kay Williams <lyndsikaywilliams@gmail.com> (https://lyndsi-williams.now.sh/)",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "dependencies": {
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^10.0.27",
